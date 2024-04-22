@@ -275,6 +275,7 @@ TODO: Include **`Example Usage`**
     // Calling the main function to start the script execution
     main()
 
+---
 
 ## Example 2
 
@@ -325,6 +326,7 @@ TODO: Include **`Example Usage`**
     // Calling the main function to start the script execution
     main();
 
+---
         
 ## Example 3
 
