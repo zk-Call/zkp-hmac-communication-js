@@ -227,15 +227,15 @@ TODO: Include **`Example Usage`**
     
     // Function to print messages with specific formatting if DEBUG is enabled
     function printMsg(who, message) {
-    if (DEBUG) {
-    console.log(`[${who}] ${message}\n`);
-    }
+        if (DEBUG) {
+          console.log(`[${who}] ${message}\n`);
+        }
     }
     
     // The main function of the script
     function main() {
-    // Generating a client seed using a SeedGenerator instance
-    const client_seed = new SeedGenerator("job").generate();
+        // Generating a client seed using a SeedGenerator instance
+        const client_seed = new SeedGenerator("job").generate();
     
         // Creating an HMAC client instance for the client using sha256 algorithm and the generated seed
         const client_hmac = new HMACClient("sha256", client_seed, 1);
@@ -288,15 +288,15 @@ TODO: Include **`Example Usage`**
     
     // Function to print messages with specific formatting if DEBUG is enabled
     function printMsg(who, message) {
-    if (DEBUG) {
-    console.log(`[${who}] ${message}\n`); // Print formatted message
-    }
+        if (DEBUG) {
+            console.log(`[${who}] ${message}\n`); // Print formatted message
+        }
     }
     
     // The main function of the script
     function main() {
-    // Generating a client seed using a SeedGenerator instance
-    const server_password = "SecretServerPassword"; // Define server password
+        // Generating a client seed using a SeedGenerator instance
+        const server_password = "SecretServerPassword"; // Define server password
     
         // Creating ZeroKnowledge instances for server and client
         const server_object = ZeroKnowledge.new("secp256k1", "sha3_256"); // Initialize server ZeroKnowledge instance
@@ -341,15 +341,15 @@ TODO: Include **`Example Usage`**
     
     // Function to print messages with specific formatting if DEBUG is enabled
     function printMsg(who, message) {
-    if (DEBUG) {
-    console.log(`[${who}] ${message}\n`); // Print formatted message
-    }
+        if (DEBUG) {
+            console.log(`[${who}] ${message}\n`); // Print formatted message
+        }
     }
     
     // The main function of the script
     function main() {
-    // Generating a client seed using a SeedGenerator instance
-    const server_password = "SecretServerPassword"; // Define server password
+        // Generating a client seed using a SeedGenerator instance
+        const server_password = "SecretServerPassword"; // Define server password
     
         // Creating ZeroKnowledge instances for server and client
         const server_object = ZeroKnowledge.new("secp256k1", "sha3_256"); // Initialize server ZeroKnowledge instance
