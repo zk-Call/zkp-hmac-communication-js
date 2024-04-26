@@ -305,14 +305,14 @@ TODO: Include **`Example Usage`**
         // Creating signatures for server and client
         const server_signature = server_object.create_signature(server_password); // Generate server signature
         printMsg("Server", `Server signature: ${server_signature}`); // Print server signature
-        const idenity = 'John'; // Define client identity
-        const client_sig = client_object.create_signature(idenity); // Generate client signature
+        const identity = 'John'; // Define client identity
+        const client_sig = client_object.create_signature(identity); // Generate client signature
         printMsg("Client", `Client signature: ${client_sig}`); // Print client signature
     
         // Signing and generating token for server and client
         const server_token = server_object.sign(server_password, client_object.token()); // Sign and generate token for server
         printMsg("Server", `Server token: ${server_token}`); // Print server token
-        const client_proof = client_object.sign(idenity, server_token.data); // Sign token data for client
+        const client_proof = client_object.sign(identity, server_token.data); // Sign token data for client
         printMsg("Client", `Client proof: ${client_proof}`); // Print client proof
     
         // Creating ZeroKnowledgeData instance for token verification
@@ -358,14 +358,14 @@ TODO: Include **`Example Usage`**
         // Creating signatures for server and client
         const server_signature = server_object.create_signature(server_password); // Generate server signature
         printMsg("Server", `Server signature: ${server_signature}`); // Print server signature
-        const idenity = 'John'; // Define client identity
-        const client_sig = client_object.create_signature(idenity); // Generate client signature
+        const identity = 'John'; // Define client identity
+        const client_sig = client_object.create_signature(identity); // Generate client signature
         printMsg("Client", `Client signature: ${client_sig}`); // Print client signature
     
         // Signing and generating token for server and client
         const server_token = server_object.sign(server_password, client_object.token()); // Sign and generate token for server
         printMsg("Server", `Server token: ${server_token}`); // Print server token
-        const client_proof = client_object.sign(idenity, server_token.data); // Sign token data for client
+        const client_proof = client_object.sign(identity, server_token.data); // Sign token data for client
         printMsg("Client", `Client proof: ${client_proof}`); // Print client proof
     
         // Creating ZeroKnowledgeData instance for token verification
